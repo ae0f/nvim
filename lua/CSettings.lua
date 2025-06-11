@@ -1,7 +1,7 @@
 
 vim.api.nvim_create_user_command(
 	'CBuild', 
-	'!cmake --build build', 
+	'!cmake --build build > build/log.txt && cat build/log.txt', 
 	{}
 )
 

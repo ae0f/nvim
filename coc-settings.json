@@ -5,8 +5,8 @@
   "suggest.minTriggerInputLength": 1,
   "diagnostic.enable": true,
   "diagnostic.errorSign": "X",
-  "diagnostic.warningSign": "W",
-  "diagnostic.infoSign": "ℹ",
+  "diagnostic.warningSign": "?",
+  "diagnostic.infoSign": "*",
   "coc.preferences.formatOnSaveFiletypes": [
     "javascript",
     "typescript",
@@ -14,7 +14,7 @@
     "json",
     "cpp",
     "c",
-    "cc"
+    "cpp"
   ],
   "languageserver": {
     "clangd": {
@@ -25,9 +25,10 @@
         "--completion-style=detailed",
         "--header-insertion=iwyu"
       ],
-      "rootPatterns": ["compile_commands.json"],
+      "rootPatterns": ["CMakeLists.txt"],
       "filetypes": ["c", "cpp", "cc"],
       "initializationOptions": {
+	      "buildDirectory": "build",
         "fallbackFlags": ["-std=c++17"]
       }
     }
@@ -44,7 +45,7 @@
   "coc.source.buffer.enable": true,
   "coc.source.around.enable": true,
   "codeLens.enable": true,
-  "diagnostic.displayByAle": true,
+  "diagnostic.displayByAle": false,
   "diagnostic.virtualText": true,
   "cpp.lint.cpplint.enable": true,
   "cpp.lint.cpplint.executable": "cpplint",
