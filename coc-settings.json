@@ -52,5 +52,6 @@
   "cpp.lint.cpplint.args": [
     "--filter=-legal/copyright,-build/include_subdir",
     "--linelength=120"
-  ]
+  ],
+  "snippets.ultisnips.pythonPrompt": false
 }
