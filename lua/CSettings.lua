@@ -13,7 +13,7 @@ vim.api.nvim_create_user_command(
 
 vim.api.nvim_create_user_command(
 	'CTest', 
-	'!ctest --output-on-failure build && echo "Testing has done." ',
+	'!ctest --output-on-failure --test-dir build && echo "Testing has done." ',
 	{}
 )
 
